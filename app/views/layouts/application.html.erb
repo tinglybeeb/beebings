@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Beebings</title>
+    <title><%= yield(:title) %> | Beebings</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,8 @@
   </head>
 
   <body>
+
+    <!-- If a view (e.g. static_pages/home) is called, then render the contents here -->
     <%= yield %>
   </body>
 </html>
